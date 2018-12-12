@@ -6,14 +6,14 @@ This is a control algorithm implementation in C++. It implements the control met
 2. Fundamental frequency estimation of a periodic disturbance
 3. Frequency-varying periodic-disturbance estimation and compensation
 
-<img src="https://raw.githubusercontent.com/HisayoshiMuramatsu/APDOB/master/images/Concept.png" alt="Concept" width="100%" height="100%" />
-
-Fig. 1 Concept of the APDOB.
-
 The functions are beneficial to realizing precise repetitive operations for automatic systems, such as actuators, industrial machines, robots, and so on.
 
 [1] Hisayoshi Muramatsu and Seiichiro Katsura “An Adaptive Periodic-Disturbance Observer for Periodic-Disturbance Suppression,” IEEE Transactions on Industrial Informatics, vol. 14, no. 10, pp. 4446-4456, Oct. 2018.
 (http://ieeexplore.ieee.org/document/8288655/)
+
+<img src="https://raw.githubusercontent.com/HisayoshiMuramatsu/APDOB/master/images/Concept.png" alt="Concept" width="70%" height="70%" />
+
+Fig. 1 Concept of the APDOB.
 
 ## Description
 
