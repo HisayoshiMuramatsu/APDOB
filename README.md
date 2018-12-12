@@ -31,13 +31,13 @@ There is a test program that simulates a position control system using a motor, 
 
 Fig. 3. Block diagram of the position control system using the APDOB.
 
-You can get the following results from the test program. First, I show the simulation result without the APDOB.
+You can get the following results from the test program. First, I show a simulation result without the APDOB.
 
 <img src="https://raw.githubusercontent.com/HisayoshiMuramatsu/APDOB/master/images/Position_PD.png" alt="Position_PD" width="50%" height="50%" />
 
 Fig. 4. Position response of the position control system without the APDOB.
 
-The added frequency-varying periodic disturbance causes the position tracking error (green line). The APDOB can attenuate the error.
+The frequency-varying periodic disturbance causes the position tracking error (green line). The APDOB can attenuate the error.
 
 <img src="https://raw.githubusercontent.com/HisayoshiMuramatsu/APDOB/master/images/Position_APDOB.png" alt="Position_APDOB" width="50%" height="50%" />
 
