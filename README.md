@@ -2,9 +2,9 @@
 
 This is a control algorithm implementation in C++. It implements the control method proposed by [1]. The adaptive periodic-disturbance observer (APDOB) can achieve the following three objectives.
 
-1. Periodic-disturbance estimation and compensation
+1. Periodic-disturbance estimation and cancellation
 2. Fundamental frequency estimation of a periodic disturbance
-3. Frequency-varying periodic-disturbance estimation and compensation
+3. Frequency-varying periodic-disturbance estimation and cancellation
 
 The functions are beneficial to realizing precise repetitive operations for automatic systems, such as actuators, industrial machines, robots, and so on.
 
