@@ -55,6 +55,8 @@ Using the estimated fundamental frequency, the APDOB estimates the frequency-var
 
 Fig. 7. Estimated periodic disturbance from the APDOB between 9 s and 15 s.
 
+Moreover, the APDOB has been successfully used for an actual industrial manipulator [1].
+
 ## Licence
 
 [MIT License](https://github.com/HisayoshiMuramatsu/APDOB/blob/master/LICENSE) © Hisayoshi Muramatsu
