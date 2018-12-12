@@ -19,7 +19,7 @@ Fig. 1. Concept of the periodic-disturbance estimation, cancellation, and fundam
 
 The APDOB includes a periodic-disturbance observer (PDOB) and adaptive notch filter (ANF). The PDOB can estimate and compensate for a periodic disturbance including a fundamental wave and harmonics. The ANF can estimate a fundamental frequency of a periodic disturbance. Accordingly, the APDOB can estimate and compensate for frequency-varying periodic disturbances.
 
-<img src="https://raw.githubusercontent.com/HisayoshiMuramatsu/APDOB/master/images/BlockDiagram_APDOB.png" alt="BlockDiagram_APDOB" width="70%" height="70%" />
+<img src="https://raw.githubusercontent.com/HisayoshiMuramatsu/APDOB/master/images/BlockDiagram_APDOB.png" alt="BlockDiagram_APDOB" width="90%" height="90%" />
 
 Fig. 2. Block diagram of the APDOB in details.
 
