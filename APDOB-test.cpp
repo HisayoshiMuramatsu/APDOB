@@ -5,6 +5,7 @@
 */
 
 #include <iostream>
+#include <fstream>
 
 #include "APDOB.cpp"
 
@@ -80,6 +81,10 @@ int main(){
 	// Construct the APDOB
 	APDOB ap(Tk, gp, gam, ga, gb, r, kappa, lambda, delata, MaxDelayTime, HatOmega0);
 
+	// Output file
+	FILE *fp;
+	fp = fopen("DATA.dat", "w");
+
 	std::cout << "=====================================" << std::endl;
 	std::cout << "           APDOB SIMULATION          " << std::endl;
 	std::cout << "=====================================" << std::endl;
@@ -101,7 +106,7 @@ int main(){
 		// ---------- APDOB ----------
 
 		// Position command
-		xcmd = 0.001*sin(2*3.1416*t);
+		xcmd = sin(2*3.1416*t);
 		// Proportional and derivative control with acceleration feedforward
 		ddxref = PDctr(xcmd, y, Kp, Kv, gpd, Tk) + ACCff(xcmd, gpd, Tk);
 		// Input current using the periodic-disturbance compensation
@@ -129,10 +134,14 @@ int main(){
 			std::cout << "---------------- " << (int) t << " s" << " ----------------" << std::endl;
 			std::cout << "Fundamental Frequency: " << Omega << " rad/s" << std::endl;
 			std::cout << "Estimated Frequency  : " << HatOmega << " rad/s" << std::endl;
-			std::cout << "Control Error        : " << 1000000*(xcmd - y) << " micron" << std::endl;
+			std::cout << "Control Error        : " << 1000*(xcmd - y) << " mm" << std::endl;
 		}
 
+		fprintf(fp , "%f %f %f %f %f %f\n", t, xcmd, y, Omega, HatOmega, xcmd-y); // Store data
+
 	}while(t<=tEND);
+
+	fclose(fp);
 
 	std::cout << "=============== Finish ==============" << std::endl;
 
