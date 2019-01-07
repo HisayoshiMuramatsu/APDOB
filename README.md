@@ -31,32 +31,6 @@ There is a test program that simulates a position control system using a motor, 
 
 Fig. 3. Block diagram of the position control system using the APDOB.
 
-You can get the following results from the test program. First, I show a simulation result without the APDOB.
-
-<img src="https://raw.githubusercontent.com/HisayoshiMuramatsu/APDOB/master/images/Position_PD.png" alt="Position_PD" width="50%" height="50%" />
-
-Fig. 4. Position response of the position control system without the APDOB.
-
-The frequency-varying periodic disturbance causes the position tracking error (green line). The APDOB can attenuate the error.
-
-<img src="https://raw.githubusercontent.com/HisayoshiMuramatsu/APDOB/master/images/Position_APDOB.png" alt="Position_APDOB" width="50%" height="50%" />
-
-Fig. 5. Position response of the position control system with the APDOB.
-
-In the APDOB, the ANF estimates the fundamental frequency of the frequency-varying periodic disturbance.
-
-<img src="https://raw.githubusercontent.com/HisayoshiMuramatsu/APDOB/master/images/Freq_APDOB.png" alt="Freq_APDOB" width="50%" height="50%" />
-
-Fig. 6. Fundamental frequency estimation using the ANF.
-
-Using the estimated fundamental frequency, the APDOB estimates the frequency-varying periodic disturbance.
-
-<img src="https://raw.githubusercontent.com/HisayoshiMuramatsu/APDOB/master/images/Force_APDOB.png" alt="Force_APDOB" width="50%" height="50%" />
-
-Fig. 7. Estimated periodic disturbance from the APDOB between 9 s and 15 s.
-
-Moreover, the APDOB has been successfully used for an actual industrial manipulator [1].
-
 ## Licence
 
 [MIT License](https://github.com/HisayoshiMuramatsu/APDOB/blob/master/LICENSE) © Hisayoshi Muramatsu
