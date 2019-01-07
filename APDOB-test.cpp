@@ -116,7 +116,10 @@ int main(){
 			}else{
 				Omega = 110;
 			}
-			Dp = sin(Omega*t) + sin(2*Omega*t) + sin(3*Omega*t); // Periodic disturbance
+			Dp = 0.0;
+			for(int i(1); i<11; i++){
+				Dp += sin(i*Omega*t); // Periodic disturbance
+			}
 			y  = Motor(u, Dp, M, Kt, 0.01*Tk); // Motor system (Input: current, output: position)
 			t += 0.01*Tk;
 		}
