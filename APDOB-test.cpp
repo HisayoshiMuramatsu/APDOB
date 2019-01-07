@@ -80,8 +80,9 @@ int main(){
 	// Construct the APDOB
 	APDOB ap(Tk, gp, gam, ga, gb, r, kappa, lambda, delata, MaxDelayTime, HatOmega0);
 
-	std::cout << "================" << std::endl;
-	std::cout << "APDOB SIMULATION" << std::endl;
+	std::cout << "=====================================" << std::endl;
+	std::cout << "           APDOB SIMULATION          " << std::endl;
+	std::cout << "=====================================" << std::endl;
 
 	/**
 	* Real-time control simulation
@@ -132,6 +133,8 @@ int main(){
 		}
 
 	}while(t<=tEND);
+
+	std::cout << "=============== Finish ==============" << std::endl;
 
 	return 0;
 }
