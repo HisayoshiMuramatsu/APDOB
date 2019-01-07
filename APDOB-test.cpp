@@ -136,8 +136,7 @@ int main(){
 			std::cout << "Estimated Frequency  : " << HatOmega << " rad/s" << std::endl;
 			std::cout << "Control Error        : " << 1000*(xcmd - y) << " mm" << std::endl;
 		}
-		
-		
+		// Data storage
 		fprintf(fp , "%f %f %f %f %f %f\n", t, xcmd, y, Omega, HatOmega, xcmd-y);
 
 	}while(t<=tEND);
