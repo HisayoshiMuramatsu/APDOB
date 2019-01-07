@@ -1,7 +1,7 @@
 /**
 	Test for the APDOB - Adaptive Periodic-Disturbance Observer.
 	@author: Hisayoshi Muramatsu
-	@date: 2018.12.13
+	@date: 2019.01.08
 */
 
 #include <iostream>
