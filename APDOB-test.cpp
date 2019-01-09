@@ -54,13 +54,13 @@ int main(){
 	// Design parameter for the Q-filter
 	const double gam = 0.5;
 	// Design frequency for the frequency estimation [rad/s]
-	const double ga = 10;
+	const double ga = 20;
 	// Design frequency for the band-pass filter [rad/s]
-	const double gb = 20;
+	const double gb = 15;
 	// Notch parameter
-	const double r = 0.7;
+	const double r = 0.5;
 	// Multi-rate ratio
-	const double kappa = 10;
+	const double kappa = 30;
 	// Forgetting factor
 	const double lambda = 0.999;
 	// Regularization parameter
@@ -106,7 +106,7 @@ int main(){
 		// ---------- APDOB ----------
 
 		// Position command
-		xcmd = sin(2*3.1416*t);
+		xcmd = 0.0;
 		// Proportional and derivative control with acceleration feedforward
 		ddxref = PDctr(xcmd, y, Kp, Kv, gpd, Tk) + ACCff(xcmd, gpd, Tk);
 		// Input current using the periodic-disturbance compensation

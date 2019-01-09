@@ -162,7 +162,13 @@ double APDOB::Delay(double HatD, int N) {
 	DelayMemory[DelayCount] = HatD;
 	// Delayed count computation
 	DelayNum = DelayCount - N;
-	if(DelayNum<0) DelayNum = DelayNum + DelayCountReset + 1;
+	if(DelayNum<0){
+		DelayNum = DelayNum + DelayCountReset + 1;
+		if(DelayNum<0){
+			std::cout<<"Error: The estimated delay (N) exceeded the maximum delay (MaxDelayTime)"<<std::endl;
+			exit(1);
+		}
+	}
 	DelayCount++;
 	if(DelayCount > DelayCountReset) DelayCount = 0;
 	// Delayed estimated disturbance
