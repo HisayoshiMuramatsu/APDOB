@@ -6,7 +6,7 @@ This is a control algorithm implementation in C++. It implements the control met
 2. Fundamental frequency estimation of a periodic disturbance
 3. Frequency-varying periodic-disturbance estimation and cancellation
 
-They are beneficial to realizing precise repetitive operations for automatic systems, such as actuators, industrial machines, robots, and so on. The APDOB can be additionally implemented into existing control systems, and we can design controllers of the systems without considering periodic disturbances and the APDOB, as shown in Fig. 1.
+They are beneficial to realizing precise repetitive operations for automatic systems, such as actuators, industrial machines, robots, and so on.
 
 [1] Hisayoshi Muramatsu and Seiichiro Katsura “An Adaptive Periodic-Disturbance Observer for Periodic-Disturbance Suppression,” IEEE Transactions on Industrial Informatics, vol. 14, no. 10, pp. 4446-4456, Oct. 2018.
 (http://ieeexplore.ieee.org/document/8288655/)
