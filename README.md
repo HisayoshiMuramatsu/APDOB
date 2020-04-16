@@ -11,6 +11,8 @@ They are beneficial to realizing precise repetitive operations for automatic sys
 [1] Hisayoshi Muramatsu and Seiichiro Katsura, “An Adaptive Periodic-Disturbance Observer for Periodic-Disturbance Suppression,” IEEE Transactions on Industrial Informatics, vol. 14, no. 10, pp. 4446-4456, Oct. 2018.
 (http://ieeexplore.ieee.org/document/8288655/)
 
+arXive (https://arxiv.org/abs/2004.00487)
+
 ## Description
 
 The APDOB includes a periodic-disturbance observer (PDOB) and adaptive notch filter (ANF). The PDOB can estimate and compensate for a periodic disturbance including a fundamental wave and harmonics. The ANF can estimate a fundamental frequency of a periodic disturbance. Accordingly, the APDOB can estimate and compensate for frequency-varying periodic disturbances.
