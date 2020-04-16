@@ -8,7 +8,7 @@ This is a control algorithm implementation in C++. It implements the control met
 
 They are beneficial to realizing precise repetitive operations for automatic systems, such as actuators, industrial machines, robots, and so on.
 
-[1] Hisayoshi Muramatsu and Seiichiro Katsura, “An Adaptive Periodic-Disturbance Observer for Periodic-Disturbance Suppression,” IEEE Transactions on Industrial Informatics, vol. 14, no. 10, pp. 4446-4456, Oct. 2018.
+[1] Hisayoshi Muramatsu and Seiichiro Katsura, “An Adaptive Periodic-Disturbance Observer for Periodic-Disturbance Suppression,” IEEE Transactions on Industrial Informatics, vol. 14, no. 10, pp. 4446-4456, Oct. 2018.  
 IEEE Xplore: http://ieeexplore.ieee.org/document/8288655/
 arXive: https://arxiv.org/abs/2004.00487
 
