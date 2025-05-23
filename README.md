@@ -1,7 +1,7 @@
 # APDOB - Adaptive Periodic-Disturbance Observer
 #### Note
 
-[GitHub - QDOB](https://github.com/HisayoshiMuramatsu/QDOB) is a backward-compatible method for the periodic-disturbance observer component of this APDOB. However, the QDOB does not support fundamental frequency estimation.
+[GitHub - QDOB](https://github.com/HisayoshiMuramatsu/QDOB) provides an upgraded method for the periodic-disturbance observer component in this APDOB. However, the QDOB does not support fundamental frequency estimation.
 
 #### APDOB
 
